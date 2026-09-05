@@ -1,0 +1,11 @@
+# 脱敏脚本：含本地绝对路径，不进公开仓库
+_sanitize.py
+
+# Python
+__pycache__/
+*.pyc
+
+# 编辑器 / 系统
+.vscode/
+.DS_Store
+Thumbs.db
