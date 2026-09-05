@@ -1,0 +1,90 @@
+{
+  "name": "research-squad",
+  "version": "1.0.0",
+  "description": "Research team covering literature review, experiment design, data analysis and paper writing for chemistry research.",
+  "author": {
+    "name": "laoda",
+    "email": ""
+  },
+  "agents": [
+    "./agents/research-squad-team-lead.md",
+    "./agents/literature-researcher.md",
+    "./agents/experiment-advisor.md",
+    "./agents/data-analyst.md",
+    "./agents/paper-writer.md"
+  ],
+
+  "expertType": "team",
+  "agentName": "research-squad-team-lead",
+  "teamInfo": {
+    "leadAgent": "research-squad-team-lead",
+    "memberAgents": ["literature-researcher", "experiment-advisor", "data-analyst", "paper-writer"]
+  },
+
+  "displayName": {
+    "en": "Research Squad",
+    "zh": "科研学术团"
+  },
+  "profession": {
+    "en": "Research Squad",
+    "zh": "科研学术团"
+  },
+  "displayDescription": {
+    "en": "A research team covering literature review, experiment design, data analysis and paper writing, from topic selection to submission.",
+    "zh": "科研全流程专家团：文献、方案、数据、写作四角色一体，主理人统筹，覆盖选题到投稿。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "帮我调研 XX 方向的研究空白，给出 3 个候选选题",
+    "en": "Help me explore research gaps in XX direction and propose 3 candidate topics"
+  },
+  "plugin": "research-squad",
+  "tags": [
+    { "en": "Literature Review", "zh": "文献综述" },
+    { "en": "Experiment Design", "zh": "实验设计" },
+    { "en": "Paper Writing", "zh": "论文写作" }
+  ],
+  "quickPrompts": [
+    { "en": "Help me explore research gaps in XX direction and propose 3 candidate topics", "zh": "帮我调研 XX 方向的研究空白，给出 3 个候选选题" },
+    { "en": "My CV data peak deviation is 8mV, analyze the cause and give an adjustment plan", "zh": "我的 CV 数据峰位偏差 8mV，帮我分析原因并给调整方案" },
+    { "en": "Revise this paper draft to meet the target journal requirements", "zh": "把这版论文初稿按目标期刊要求改一遍" }
+  ],
+  "members": [
+    {
+      "id": "research-squad-team-lead",
+      "displayName": { "en": "Gu", "zh": "顾全之" },
+      "profession": { "en": "Research Director", "zh": "科研总监" },
+      "avatar": "avatars/research-squad-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "literature-researcher",
+      "displayName": { "en": "Wen", "zh": "文思远" },
+      "profession": { "en": "Literature Researcher", "zh": "文献研究员" },
+      "avatar": "avatars/literature-researcher.png",
+      "role": "member"
+    },
+    {
+      "id": "experiment-advisor",
+      "displayName": { "en": "Fang", "zh": "方得准" },
+      "profession": { "en": "Experiment Design Advisor", "zh": "实验方案顾问" },
+      "avatar": "avatars/experiment-advisor.png",
+      "role": "member"
+    },
+    {
+      "id": "data-analyst",
+      "displayName": { "en": "Shu", "zh": "数理通" },
+      "profession": { "en": "Data Analyst", "zh": "数据分析师" },
+      "avatar": "avatars/data-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "paper-writer",
+      "displayName": { "en": "Zhang", "zh": "章成文" },
+      "profession": { "en": "Paper Writing Specialist", "zh": "论文写作专家" },
+      "avatar": "avatars/paper-writer.png",
+      "role": "member"
+    }
+  ]
+}
